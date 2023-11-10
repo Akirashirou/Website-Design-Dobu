@@ -1,0 +1,997 @@
+/******************************************
+            Universal Styles
+*******************************************/
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+/******************************************
+              Header Styles
+*******************************************/
+#header{
+    height: 100vh;
+    background-image: url(../Images/dcbc4126d9ee275bc2f87f8d3a581485kaninakd.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    margin-right: 50px;
+    margin-left: 20px;
+
+}
+
+.logo{
+    margin-top: 1px;
+    width: 200px;
+    height: 150px;
+    margin-left: 30px;
+}
+
+.header-text{
+    max-width: 1100px;
+    margin-top: 140px;
+    margin-left: 50px;
+
+}
+
+h1{
+    font-size: 50px;
+    color: black;
+    text-align: left;
+}
+
+h2{
+    font-size: 90px;
+    color: black;
+}
+
+
+.square{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #f8f9fa;
+    margin: 15px 0;
+
+}
+
+.common-btn{
+    padding: 18px 20px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #f8f9fa;
+    cursor: pointer;
+}
+
+p{
+    font-size: 25px;
+    line-height: 15px;
+    color:  #d5dde6;
+}
+
+.header-text button{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    color:  #f8f9fa;
+}
+
+
+p{
+    color: #adb5bd;
+    margin-top: 10px;
+}
+
+.line{
+    line-height: 8px;
+
+}
+
+/******************************************
+              Pop Up Styles
+*******************************************/
+
+{box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/******************************************
+              Nav Bar Styles
+*******************************************/
+
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top:0;
+    background: #959ba1;
+    z-index:2;
+    transition: .5s;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#menuBtn{
+    width: 30px;
+    position: fixed;
+    right: 35px;
+    top: 20px;
+    z-index: 2;
+    cursor: pointer;
+}
+/******************************************
+              About Styles
+*******************************************/
+
+#about, #offer{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../Images/15.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.about-left-col{
+    flex-basis: 50%; 
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  width: auto;
+  margin-top: 10px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  left: 45%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: white(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:solid black;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: relative;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.about-right-col{
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.about-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+
+.about-text h1{
+    color: black;
+    font-size: 25px;
+    margin-right: 400px;
+}
+
+.about-text h2{
+    color: black;
+    font-size: 67px;
+
+}
+
+.about-text h3{
+    margin: 50px 0 10px;
+    font-size: 25px;
+    font-style: italic;
+    color: black;
+}
+
+.about-text h4{
+    font-size: 20px;
+    font-style: italic;
+    color: #777;
+}
+
+
+/******************************************
+              Facilities Styles
+*******************************************/
+
+#facility {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 70vh; /* Adjust the height as needed */
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid gray;
+    font-size: 60px;
+    margin-bottom: 40px;
+    background-image: url(../Images/17.avif);
+    background-position: center;
+    background-size: cover;
+  }
+
+  
+  .facility-left-column {
+    flex-basis: 50%;
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: 67px;
+    color: black;
+    margin-bottom: 40px;
+  }
+
+  
+  /* Style the image slider */
+  .slider {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-container {
+    width: 800px; /* Adjust based on the number of images */
+    height: 300px;
+    display: flex;
+    animation: slide-animation 10s linear infinite; /* Change the duration to 2 seconds */
+  }
+  
+  .slide {
+    width: 500px;
+    height: 600px;
+  }
+  
+  /* Style the text for each image */
+  .slide p {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    display: none;
+    position: relative;
+  }
+  
+  /* Show the text for the currently active slide */
+  .slide:target p {
+    display: block;
+  }
+  
+  /* Keyframes for the sliding animation */
+  @keyframes slide-animation {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-500px);
+    }
+    30% {
+      transform: translateX(-500px);
+    }
+    40% {
+      transform: translateX(-1000px);
+    }
+    50% {
+      transform: translateX(-1000px);
+    }
+    60% {
+      transform: translateX(-1500px);
+    }
+    70% {
+      transform: translateX(-1500px);
+    }
+    80% {
+      transform: translateX(-2000px);
+    }
+    90% {
+      transform: translateX(-2000px);
+    }
+  }
+  
+  /* Display the text based on the animation percentage */
+  .slide:nth-child(2):target p {
+    animation: fadeIn 0.2s 1s both;
+  }
+  
+  .slide:nth-child(3):target p {
+    animation: fadeIn 0.2s 1s both;
+  }
+  
+  .slide:nth-child(4):target p {
+    animation: fadeIn 0.2s 1s both;
+  }
+  
+  .slide:nth-child(5):target p {
+    animation: fadeIn 0.2s 1s both;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+/******************************************
+              Features Styles
+*******************************************/
+
+
+#features{
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Vertical centering */
+    align-items: center;
+    border: 2px solid black;
+    font-size: 60px;
+    background-image: url(../Images/20.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+/* Three columns side by side */
+.column {
+    width: 39.3%;
+    margin: 10px;;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 140%;
+  }
+
+.column img{
+    width: 80%;
+    height: 40%;
+    max-width: 80%;
+}
+
+
+.first-column{
+    width: 33.5%; /* Adjust the width as needed */
+    margin: 10px; /* Add margin for spacing */
+    text-align: center; /* Reset text alignment to the left within the first column */
+    padding: 20px; /* Adjust the padding to control the size of the box */
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.fifth-column{
+    width: 37.9%; /* Adjust the width as needed */
+    margin: 10px; /* Add margin for spacing */
+    text-align: center; /* Reset text alignment to the left within the first column */
+    padding: 20px; /* Adjust the padding to control the size of the box */
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.first-column img{
+    width: 80%;
+    height: auto;
+    max-width: 80%;
+}
+
+.fifth-column img{
+    width: 80%;
+    height: auto;
+    max-width: 80%;
+}
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 450px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  h4{
+    color: whitesmoke;
+  }
+
+  h5{
+    font-size: 60px;
+    color: whitesmoke;
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: whitesmoke;
+    font-size: 23px;
+    text-align: center;
+  }
+
+  p{
+    color: whitesmoke;
+    font-size: 15px;
+  }
+
+  p2{
+    font-size: 12px;
+    color: whitesmoke;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    background-color: whitesmoke;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+/******************************************
+              Courses Styles
+*******************************************/
+
+#courses{
+  padding: 100px 0;
+  background-image: url(../Images/23.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: 40px;
+  
+}
+
+.course-row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.course-right-col{
+  flex-basis: 50%;
+}
+
+.course-right-col img{
+  width: 100%;
+}
+
+.course-left-col{
+  flex-basis: 50%;
+}
+
+.course-text{
+  max-width: 350px;
+}
+
+.course-text button{
+  margin: 30px 0;
+}
+
+#courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Vertical centering */
+  align-items: center;
+  border: 2px solid black;
+  font-size: 60px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.text-gallery{
+  border: none;
+  width: 100%;
+  font-size: 60px;
+  text-align: center;
+}
+
+div.gallery {
+  margin: 10px;
+  border: 1px solid #ccc;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/******************************************
+              Prices Styles
+*******************************************/
+
+#prices {
+  display: flex;
+  background-image: url(../Images/grabeba.webp);
+  flex-wrap: wrap;
+  justify-content: center; /* Vertical centering */
+  align-items: center;
+  border: 2px solid black;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+
+.prices-row img{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%; /* Set the width to 100% to make the image fill its container */
+  max-width: 1000px;
+}
+
+h6{
+  text-align: center;
+  font-size: 40px;
+}
+
+
+
+/******************************************
+              Contact Styles
+*******************************************/
+
+.contact-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-left-col, .contact-right-col{
+    flex-basis: 50%;
+}
+
+.contact-left-col{
+    margin-top: 100px;
+}
+
+h7{
+    font-size: 70px;
+}
+
+.contact-right-col img{
+    width: 98%;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+form{
+    max-width: 350px;
+    margin: 30px 0;
+}
+
+form input{
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid #c4e8ff;
+}
+
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn-box button{
+    flex-basis: 48%;
+    padding: 18px 0;
+    
+}
+
+/******************************************
+              Review Styles
+*******************************************/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.testimonials{
+  padding: 40px 0;
+  background: #f1f1f1;
+  color: #434343;
+  text-align: center;
+}
+
+h8{
+  color: black;
+  font-size: 50px;
+}
+
+p{
+  color: black;
+}
+
+
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border{
+  width: 160px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 26px auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial{
+  background: #fff;
+  padding: 30px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars{
+  color: #6ab04c;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
+}
+
+
+/******************************************
+              Footer Styles
+*******************************************/
+
+#footer{
+    padding: 00px 0 30px;
+    background-color: #959ba1;
+}
+
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #5cb6f9;
+}
+
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left-col{
+    flex-basis: 50%;
+    margin-top: 50px;
+}
+
+.footer-right-col{
+    flex-basis: 35%;
+    margin-right: -400px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link-title h4{
+    color: #c4e8ff;
+    margin-bottom: 20px;
+}
+
+.link-title small{
+    color: #777;
+    font-size: 13px;
+}
+
+.footer-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo img{
+    width: 150px;   
+}
+
+.footer-logo button{
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.copyright-text, .footer-logo{
+    flex-basis: 40%;
+}
+
+/******************************************
+              Social-Icons Styles
+*******************************************/
+
+.social-icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.social-icons img{
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}
+
+/******************************************
+              Media Queries Styles
+*******************************************/
+
+@media only screen and (max-width:770px){
+    #header{
+        background-image: none;
+       
+    }
+    
+    .container{
+        margin-right: 50px;
+        margin-left: 50px;
+    
+    }
+    
+    .logo{
+        margin-top: 27px;
+        width: 250px;
+    }
+    
+    .header-text{
+        margin-top: 100px;
+    
+    }
+    
+    h{
+        font-size: 25px;
+    }
+
+    #menuBtn{
+        width: 20px;
+        right: 20px;
+    }
+
+    .common-btn{
+        padding: 10px 16px;
+        
+    
+    }
+
+    .social-icons img{
+        width: 14px;
+        margin: 15px auto;
+    }
+
+    .about-left-col, .about-right-co{
+        flex-basis: 100%; 
+    }
+
+    .about-text{
+        margin: 50px 50px 0;
+        display: inline-block;
+    }
+
+
+}
+
+
+
+
+

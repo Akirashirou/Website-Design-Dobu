@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobu Martial Arts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+</head>
+<body style="background-color: gray;">
+    <!--Header-->
+    <section id="header">
+        <div class="container">
+            <img src="Images/capter1 (1).png" class="logo">
+            <div class="header-text">
+                <h1> Welcome to</h1>
+                <h2>DOBU MARTIAL ARTS</h2>
+                    <span class="square"></span>
+                    <p>Train | Upgrade | Evolve</p>
+                    <button class="common-btn">Contact us Today</button>
+                </div>
+        </div>
+
+    </section>
+
+    <!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">LOGIN</button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <ul>
+      <li><a href="#contact">
+        <button type="submit" class="btn">Do not have an account? Click to sign up</button>
+      </a></li>
+    </ul>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">Martial Arts</a></li>
+            <li><a href="#facility">Facilities</a></li>
+            <li><a href="#features">Instructors</a></li>
+            <li><a href="#courses">Gallery</a></li>
+            <li><a href="#prices">Prices/Schedule</a></li>
+            <li><a href="#contact">Login/Signup</a></li>
+            <li><a href="#userrating">Testimonials</a></li>
+
+        </ul>
+    </nav>
+    <img src="Images/menu.png" id="menuBtn">
+
+    <!--about-->
+
+    <section id="about">
+        <div class="about-left-col">
+            
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="Images/jui jutsi.jpg" style="width:100%">
+                    <div class="text">JUI JUTSU</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="Images/karate.jpg" style="width:100%">
+                    <div class="text">KARATE</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="Images/judo.jpg" style="width:100%">
+                    <div class="text">JUDO</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="Images/mau htai.jpg" style="width:100%">
+                    <div class="text">MUAY THAI</div>
+                    </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+        <div class="about-right-col">
+           <div class="about-text">
+            <h1> Offered</h1>
+            <h2>MARTIAL ARTS</h2>
+            <span class="square"></span>
+                    <p></p>
+                       <div class="line">
+                           <span class="line-1"></span><br>
+                           <span class="line-2"></span><br>
+                           <span class="line-3"></span>
+                       </div>
+            <h3>"I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times"</h2>
+                        <h4>--- Bruce Lee</h3>
+           </div>
+        </div>
+    </section>
+        <!-- Facilities -->
+        <section id="facility">
+            <div class="facility-left-column">
+                <h3>FACILITIES</h3>
+                <div class="slider">
+                    <span id="slide-1"></span>
+                    <span id="slide-2"></span>
+                    <span id="slide-3"></span>
+                    <span id="slide-4"></span>
+                    <span id="slide-5"></span>
+                    <div class="image-container">
+                        <div class="slide">
+                          <img src="/Images/matted martial arts area.jpg" width="500" height="300" />
+                          <p>Matted Martial Arts Area</p>
+                        </div>
+                        <div class="slide">
+                          <img src="/Images/ully-equipped gym.jpg" width="500" height="300" />
+                          <p>Fully Equipped Gym</p>
+                        </div>
+                        <div class="slide">
+                          <img src="/Images/a sauna.webp" width="500" height="300" />
+                          <p>Sauna</p>
+                        </div>
+                        <div class="slide">
+                          <img src="/Images/steam room.jpg" width="500" height="300" />
+                          <p>Steam Room</p>
+                        </div>
+                        <div class="slide">
+                          <img src="/Images/changing and shower fa.jpg" width="500" height="300" />
+                          <p>Changing and Shower Facilities</p>
+                        </div>
+                    </div>
+                <div class="buttons">
+                      <a href="#slide-1"></a>
+                      <a href="#slide-2"></a>
+                      <a href="#slide-3"></a>
+                      <a href="#slide-4"></a>
+                      <a href="#slide-5"></a>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+    <!--Features-->
+    <section id="features">
+        <h5>Meet The Dobu Team</h5>
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="Images/unkown.jpg" alt="Gomez" style="width:100%">
+                <div class="container">
+                  <h4>Mauricio Gomez</h4>
+                  <p class="title">Gym Owner/Head Martial Arts Coach</p>
+                  <p>Coaches in all martial arts</p>
+                  <p>4th Dan Blackbelt Judo</p>
+                  <p>3rd Dan Blackbelt Jiu-jutsu</p>
+                  <p>1st Dan Blackbelt Karate</p>
+                  <p>Accredited Muay Thai Coach</p>
+                  <p2>example@example.com</p2>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="Images/unkown.jpg" alt="Sarah" style="width:100%">
+                <div class="container">
+                  <h4>Sarah Nova</h4>
+                  <p class="title">Assistant Martial Arts Coach</p>
+                  <p>5th Dan Karate</p>
+                  <p2>example@example.com</p2>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="Images/unkown.jpg" alt="Guy" style="width:100%">
+                <div class="container">
+                  <h4>Guy Victory</h4>
+                  <p class="title">Assistant Martial Arts Coach</p>
+                  <p>2nd Dan Blackbelt Jiu-jitsu</p>
+                  <p>1st Dan Blackbelt Judo</p>
+                  <p2>example@example.com</p2>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="Images/unkown.jpg" alt="Morris" style="width:100%">
+                <div class="container">
+                  <h4>Morris Davis</h4>
+                  <p class="title">Assistant Martial Arts Coach</p>
+                  <p>Accredited Muay Thai Coach</p>
+                  <p>3rd Dan Blackbelt Karate</p>
+                  <p2>example@example.com</p2>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="Images/unkown.jpg" alt="Traci" style="width:100%">
+                <div class="container">
+                  <h4>Traci Santiago</h4>
+                  <p class="title">Fitness Coach</p>
+                  <p>BSc in Science Sport</p>
+                  <p>Qualified in Health and Nutrition</p>
+                  <p>Specialises in Devising Strength and Conditioning Programs for Combat Athlete</p>
+                  <p2>example@example.com</p2>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="Images/unkown.jpg" alt="Kaur" style="width:100%">
+                <div class="container">
+                  <h4>Harpreet Kaur</h4>
+                  <p class="title">Fitness Coach</p>
+                  <p>BSc in Physiotherapy</p>
+                  <p>MSc in Sports Science</p>
+                  <p2>example@example.com</p2>
+                  <p2>example@example.com</p2>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+
+        <!--Features-->
+        <section id="courses">
+            <div class="text-gallery">Gallery</div>
+            <div class="gallery">
+                <a target="_blank" href="img_5terre.jpg">
+                  <img src="Images/kidsmartialarts.png" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">Kids Comaradirie</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img_forest.jpg">
+                  <img src="Images/marmar.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">Focus Training</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img_lights.jpg">
+                  <img src="Images/classpic.jpg" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">Batch 2023</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                  <img src="Images/tsak.webp" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Coach Skill</div>
+              </div>
+              
+
+
+        </section>
+
+        <section id="prices">
+          <div class="container prices-row">
+            <h6></h6>
+            <img src="Images/prices.PNG" alt="Prices Image">
+            <h6></h6>
+            <img src="Images/schedule.PNG" alt="Schedule Image">
+          </div>
+
+      </section>
+
+
+        <!--Offer-->
+        <section id="contact">
+            <div class="container contact-row">
+                <div class="contact-left-col">
+                    <h7>Sign up to join <br> Dobu Martial Arts</h7>
+                    <form>
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <input type="password" placeholder="Enter Password">
+                        <div class="btn-box">
+                            <button class="common-btn">Sign Up</button>
+                            <button class="common-btn">Avail Now</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-right-col">
+                    <img src="Images/wallpaper2you_140351jdudo.jpg">
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="userrating">
+          <div class="testimonials">
+            <div class="inner">
+              <h8>Testimonials</h8>
+              <div class="border"></div>
+      
+              <div class="row">
+                <div class="col">
+                  <div class="testimonial">
+                    <img src="Images/unkown.jpg" alt="">
+                    <div class="name">Full name</div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+      
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                  </div>
+                </div>
+      
+                <div class="col">
+                  <div class="testimonial">
+                    <img src="Images/unkown.jpg" alt="">
+                    <div class="name">Full name</div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+      
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                  </div>
+                </div>
+      
+                <div class="col">
+                  <div class="testimonial">
+                    <img src="Images/unkown.jpg" alt="">
+                    <div class="name">Full name</div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+      
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          
+
+  
+        </section>
+
+        <!--Footer-->
+
+        <section id="footer">
+            <div class="container footer-row">
+                <hr>
+                <div class="footer-left-col">
+                    <div class="footer-links">
+                    <div class="link-title">
+                        <h4>Product</h4>
+                        <small>Our Plan</small><br>
+                        <small>Free Trial</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>About us</h4>
+                        <small>Request Demo</small><br>
+                        <small>FAQs</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Support</h4>
+                        <small>Features</small><br>
+                        <small>Contact Us</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Explore</h4>
+                        <small>Find a non profit</small><br>
+                        <small>Corporate solutions</small>
+                    </div>
+                </div>
+                </div>
+                <div class="footer-right-col">
+                    <div class="footer-info">
+                        <div class="copyright-text">
+                            <small>support@dobumartialart</small><br>
+                            <small>&copy; 2023 Dobu Martial Arts</small>
+                        </div>
+                        <dive class="footer-logo">
+                            <img src="Images/capter1 (1).png">
+                            <button class="common-btn">English</button>
+                        </dive>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- social-icons-->
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"> <img src="Images/facebook.png"></a>
+          <a href="https://www.instagram.com/" target="_blank"> <img src="Images/instagram.png"></a>
+        </div>
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
